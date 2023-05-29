@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import './NavBar.css'
+
 const NavBar = () => {
   const [displayedMenu, setDisplayedMenu] = useState(false)
   const handleSetDisplayedMenu = () => {
     setDisplayedMenu(!displayedMenu)
   }
   return (
-    <nav className={"nav--bar"}>
+    <nav className="nav--bar">
       <ul className={`nav--ul ${displayedMenu ? 'displayed--menu':''}`}>
         <li className="nav--list__item">
           <a href="#home">Home</a>

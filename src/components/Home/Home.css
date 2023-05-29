@@ -2,6 +2,9 @@
     height: 100vh;
     width: 100vw;
     position: relative;
+    border-bottom: solid 2px #fff;
+    background-color: black;
+    z-index: -2;
 }
 
 .home--background__image {
@@ -22,13 +25,14 @@
     background-color: var(--primary-color-curtain);
     z-index: 10;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .brand--container {
-    height: 5rem;
     width: 80%;
+    border: solid 1px #fff;
 }
 
 .brand--title {
@@ -46,5 +50,38 @@
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    letter-spacing: 5px;
+    letter-spacing: 1.5vw;
+}
+
+.comments--actions__container {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.home--btn {
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: solid 2px #fff;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .home--background__image {
+        width: 50%;
+        transform: scaleX(-1);
+        margin-left: 50%;
+    }
+
+    .home--section__container {
+        align-items: start;
+        margin-left: 10vw;
+    }
+
+    .brand--container {
+        width: 40%;
+    }
 }

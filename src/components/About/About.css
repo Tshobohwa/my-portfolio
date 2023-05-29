@@ -1,0 +1,10 @@
+.about--section__wrapper {
+    width: 100%;
+    background-color: black;
+    padding: 1.5rem;
+}
+
+.about--section__profile {
+    width: 40%;
+    border: solid 1px #fff;
+}
