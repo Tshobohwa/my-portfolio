@@ -14,10 +14,9 @@
     width: 100%;
     padding: 25% 1rem 1rem 1rem;
     margin-top: 30%;
-    background-color: var(--font-color);
-    color: var(--color-primary);
-    border-radius: 1rem;
+    border: solid 3px var(--font-color);
     position: relative;
+    background-color: var(--primary-color-curtain);
 }
 
 .about--section__profile {
