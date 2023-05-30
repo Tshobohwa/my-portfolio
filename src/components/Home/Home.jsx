@@ -12,7 +12,7 @@ const Home = () => {
           <hr className='brand--horizontal__line' />
           <small className='brand--small' ><span>TSHOBOHWA</span><span>SULEMANI</span></small>
         </div>
-        <div className='comments--actions__container'>
+        <div className='comments--btn__container'>
           <p className='home--page__comment'>I'm an enthusiast, passionate, skilled, innovative, and detail-oriented <br/> full stack web developer.</p>
           <div className='actions--buttons__container'>
             <button className='home--btn'>Let's connect</button>

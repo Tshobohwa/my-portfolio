@@ -22,6 +22,7 @@
 .home--section__container {
     height: 100%;
     width: 100%;
+    padding: 10%;
     background-color: var(--primary-color-curtain);
     z-index: 10;
     display: flex;
@@ -31,8 +32,7 @@
 }
 
 .brand--container {
-    width: 80%;
-    border: solid 1px #fff;
+    width: 100%;
 }
 
 .brand--title {
@@ -50,13 +50,26 @@
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    letter-spacing: 1.5vw;
+    letter-spacing: 5px;
 }
 
-.comments--actions__container {
-    width: 90%;
+.comments--btn__container {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.actions--buttons__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 
+.home--page__comment {
+    height: 1.2rem;
+    font-weight: 400;
+} */
 
 .home--btn {
     height: 3rem;
@@ -67,6 +80,7 @@
     backdrop-filter: blur(5px);
     background-color: transparent;
     padding: 0 1rem;
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 1024px) {
