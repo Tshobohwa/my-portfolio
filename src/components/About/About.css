@@ -1,13 +1,8 @@
 .about--section__wrapper {
     width: 100%;
-    background-color: var(--color-primary);
     padding: 1.5rem;
     padding-left: 4rem;
     color: var(--font-color);
-    background-image: url('../../assets/images/black-marble.jpeg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 }
 

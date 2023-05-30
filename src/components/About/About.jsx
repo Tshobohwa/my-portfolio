@@ -1,5 +1,6 @@
 import './About.css'
 import profilePic from '../../assets/images/profile-pic.png'
+import Skills from '../Skills/Skills'
 
 const About = () => {
   return (
@@ -13,6 +14,8 @@ const About = () => {
                technologies.</p>
         </div>
         <button className='about--section__btn'>Get my resume</button>
+        <h2 className='about--section__title'>Skills</h2>
+        <Skills />
       </section>
   )
 }

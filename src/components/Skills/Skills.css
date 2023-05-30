@@ -1,0 +1,19 @@
+.skills--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.skill--container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.skill--icon {
+    color: var(--font-color);
+    height: 3rem;
+    width: 3rem;
+}

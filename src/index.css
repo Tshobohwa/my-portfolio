@@ -15,18 +15,3 @@
     padding: 0;
     margin: 0;
 }
-
-body {
-    color: var(--font-color);
-    font-family: "Lato", sans-serif;
-    background-color: #212121;
-}
-
-a {
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-li {
-    list-style: none;
-}
