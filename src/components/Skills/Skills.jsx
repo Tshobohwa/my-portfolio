@@ -1,5 +1,6 @@
-import { FaReact,  FaHtml5, FaCss3Alt, FaNodeJs, FaBootstrap, FaSass} from 'react-icons/fa';
-import { SiRedux, SiMysql,  SiPostgresql, SiRubyonrails, SiTailwindcss, SiExpress, SiPostman, SiVisualstudiocode} from 'react-icons/si';
+import { FaReact,  FaHtml5, FaCss3Alt, FaNodeJs, FaSass} from 'react-icons/fa';
+import { SiRedux, SiPostgresql, SiRubyonrails,  SiExpress, SiVisualstudiocode} from 'react-icons/si';
+import { MdKeyboardDoubleArrowRight} from 'react-icons/md'
 import { DiMongodb, DiRuby} from 'react-icons/di';
 import { IoLogoJavascript} from 'react-icons/io';
 import {BsGit, BsGithub} from 'react-icons/bs';
@@ -8,7 +9,7 @@ import './Skills.css'
 const Skills = () => {
   return (
     <div className='skills--container'>
-        <h3 className='skills--categorie__name'>Front-end</h3>
+        <h3 className='skills--categorie__name'> <MdKeyboardDoubleArrowRight className='arrow--icon'/> <hr className='skills--section__hr' />  Front-end  </h3>
         <ul className='skills--list'>
             <li className='skill--container'>
                 <FaHtml5 className='skill--icon' />
@@ -34,16 +35,8 @@ const Skills = () => {
                 <SiRedux className='skill--icon' />
                 <p className='skill--name'>Redux</p>
             </li>
-            <li className='skill--container'>
-                <FaBootstrap className='skill--icon' />
-                <p className='skill--name'>Bootstrap</p>
-            </li>
-            <li className='skill--container'>
-                <SiTailwindcss className='skill--icon' />
-                <p className='skill--name'>TailwindCSS</p>
-            </li>    
         </ul>
-        <h3 className='skills--categorie__name'>Back-end</h3>
+        <h3 className='skills--categorie__name'> <MdKeyboardDoubleArrowRight className='arrow--icon'/> <hr className='skills--section__hr' />  Back-end </h3>
         <ul className='skills--list'>
             <li className='skill--container'>
                 <DiRuby className='skill--icon' />
@@ -66,15 +59,11 @@ const Skills = () => {
                 <p className='skill--name'>MongoDB</p>
             </li>
             <li className='skill--container'>
-                <SiMysql className='skill--icon' />
-                <p className='skill--name'>mySQL</p>
-            </li>
-            <li className='skill--container'>
                 <SiPostgresql className='skill--icon' />
                 <p className='skill--name'>postgresql</p>
             </li>
         </ul>
-        <h3 className='skills--categorie__name'>Tools</h3>
+        <h3 className='skills--categorie__name'> <MdKeyboardDoubleArrowRight className='arrow--icon'/> <hr className='skills--section__hr' />  Tools</h3>
         <ul className='skills--list'>
             <li className='skill--container'>
                 <BsGit className='skill--icon' />
@@ -83,10 +72,6 @@ const Skills = () => {
             <li className='skill--container'>
                 <BsGithub className='skill--icon' />
                 <p className='skill--name'>Github</p>
-            </li>
-            <li className='skill--container'>
-                <SiPostman className='skill--icon' />
-                <p className='skill--name'>Postman</p>
             </li>
             <li className='skill--container'>
                 <SiVisualstudiocode className='skill--icon' />

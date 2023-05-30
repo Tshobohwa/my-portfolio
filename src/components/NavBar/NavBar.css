@@ -11,11 +11,11 @@
     width: 40px;
     margin: 5px;
     cursor: pointer;
-    border: solid 1px #fff;
+    border: solid 1px var(--font-color);
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: black;
+    background-color: var(--color-primary);
 }
 
 .hambuger--menu div {
@@ -26,7 +26,7 @@
 }
 
 .hambuger--menu span {
-    background-color: #fff;
+    background-color: var(--font-color);
     width: 100%;
     height: 2px;
     display: block;
