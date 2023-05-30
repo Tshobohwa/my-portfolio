@@ -4,6 +4,9 @@
     left: 0;
     right: 0;
     z-index: 100;
+    backdrop-filter: blur(3px);
+    height: 5rem;
+    background-color: var(--primary-color-curtain);
 }
 
 .hambuger--menu {
@@ -76,4 +79,15 @@
 
 .displayed--menu {
     margin-left: 50vw;
+}
+
+.header--logo__container {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.header--logo {
+    height: 100%;
+    width: 100%;
 }

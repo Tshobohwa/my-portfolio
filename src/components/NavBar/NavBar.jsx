@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import myLogo from "../../assets/icons/mylogo.png"
 import './NavBar.css'
 
 const NavBar = () => {
@@ -8,6 +9,9 @@ const NavBar = () => {
   }
   return (
     <nav className="nav--bar">
+      <div className='header--logo__container'>
+        <img src={myLogo} alt="my logo" className='header--logo' />
+      </div>
       <ul className={`nav--ul ${displayedMenu ? 'displayed--menu':''}`}>
         <li className="nav--list__item">
           <a href="#home">Home</a>
