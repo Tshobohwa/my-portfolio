@@ -84,6 +84,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .home--section__wrapper {
+        overflow: hidden;
+    }
+
     .home--background__image {
         width: 50%;
         transform: scaleX(-1);
