@@ -8,6 +8,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .about--section__container {
@@ -27,4 +28,16 @@
     border: solid 1px var(--font-color);
     border-radius: 0.5rem;
     background-color: var(--color-accent-1);
+}
+
+.about--section__btn {
+    height: 3rem;
+    border: solid 2px var(--font-color);
+    background-color: var(--color-accent-1);
+    color: var(--font-color);
+    margin-top: 1rem;
+    margin-left: 100%;
+    transform: translateX(-100%);
+    width: 9rem;
+    font-size: 1.2rem;
 }

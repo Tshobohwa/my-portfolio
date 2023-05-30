@@ -12,6 +12,7 @@ const About = () => {
               tackling challenging problems, constantly expanding my knowledge of programming languages and emerging
                technologies.</p>
         </div>
+        <button className='about--section__btn'>Get my resume</button>
       </section>
   )
 }
