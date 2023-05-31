@@ -9,10 +9,12 @@ import bgImg from "./assets/images/black-marble.jpeg";
 
 function App() {
   const [bgImgIsLoaded, setBgImgIsLoaded] = useState(false);
+  useEffect(() => {
+    setBgImgIsLoaded(true);
+  }, []);
   return (
     <div className="App">
       <img
-        onLoad={setBgImgIsLoaded(true)}
         className={`app--bg__img ${bgImgIsLoaded ? "" : "no--bg__img"}`}
         src={bgImg}
       />
