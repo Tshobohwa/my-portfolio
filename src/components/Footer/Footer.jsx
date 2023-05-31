@@ -3,16 +3,19 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='page--footer'>
         <header className='footer--header'>
             <h2></h2>
         </header>
-        <form>
+        <form className='footer--form'>
             <h3>Contact me</h3>
             <input type="text" placeholder='Write your name here' className='footer--form__input'/>
             <input type="email" placeholder='Write your email here' className='footer--form__input'/>
-            <textarea name="message" id="" cols="30" rows="10" placeholder='Writre your message here'></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder='Writre your message here' className='footer--form__textarea' ></textarea>
         </form>
+        <footer className='page--footer__footer'>
+            <p>All right reserved</p>
+        </footer>
     </footer>
   )
 }
