@@ -6,6 +6,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 1s;
 }
 
 a {
