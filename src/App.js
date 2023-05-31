@@ -12,7 +12,7 @@ function App() {
     setBgImg(true);
   }, []);
   return (
-    <div className={`App ${bgImg ? "" : "no--bg__img"}`}>
+    <div className={`App .app--bg__img ${bgImg ? "" : "no--bg__img"}`}>
       <header className="app--header">
         <NavBar />
       </header>

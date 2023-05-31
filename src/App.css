@@ -5,10 +5,10 @@ body {
 }
 
 .no--bg__img {
-    background-image: none;
+    background-image: url("");
 }
 
-.App {
+.app--bg__img {
     background-image: url('./assets/images/black-marble.jpeg');
     background-position: top;
     background-repeat: no-repeat;
