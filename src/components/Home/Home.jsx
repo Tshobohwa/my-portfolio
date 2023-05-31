@@ -3,17 +3,16 @@ import './Home.css'
 import background from '../../assets/images/home-background.png'
 
 const Home = () => {
+  const homePageComment = "I am an enthusiast, passionate, skilled, innovative, and detail-oriented full stack web developer.";
   const [imageLoaded, setImageLoaded] = useState(false);
-  const handleImageLoadEvent = () => {
-    setImageLoaded(true)
-  }
-const homePageComment = "I am an enthusiast, passionate, skilled, innovative, and detail-oriented full stack web developer.";
+  const [displayedHorizontalLine, setDisplayedHorizontalLine] = useState(false)
   const [displayedHomePageComment, setDisplayedHomePageComment] = useState('');
   const [homeBtnDisplayed, setHomeBtnDisplayed] = useState(false);
-
-  useEffect(() => {
-    setDisplayedHomePageComment("I")
+  const [brandTitleDisplayed, setBrandTitleDisplayed] = useState(false)
+  
+  const  displayHomePageComment = () => {
     const homePageCommentChars = homePageComment.split("");
+    setDisplayedHomePageComment("I'")
     let currentIndex = 0;
       const timer = setInterval(() => {
         if (currentIndex < homePageCommentChars.length-1) {
@@ -26,14 +25,33 @@ const homePageComment = "I am an enthusiast, passionate, skilled, innovative, an
       }, 100); 
       return () => {
         clearInterval(timer);
-      };
-    }, []); 
+      };}
+  
+  const displayBrandText = () => {
+    setBrandTitleDisplayed(true);
+    setTimeout(displayHomePageComment, 2000);
+
+  }
+
+  const  displayHomePageContent = () => {
+    if (!imageLoaded) return
+    setDisplayedHorizontalLine(true);
+    setTimeout(displayBrandText , 1000)
+  }
+  const handleImageLoadEvent = () => {
+    setImageLoaded(true)
+    setTimeout(
+      displayHomePageContent()
+    , 500)
+  }
+  useEffect(displayHomePageContent, [imageLoaded])
+
     return (
     <section id='home-section' className='home--section__wrapper'>
       <img src={background} alt="background" onLoad={handleImageLoadEvent} className={`home--background__image ${imageLoaded? '':'home--bg__hidden'}`} />
       <div className='home--section__container'>
         <div className='brand--container'>
-          <h1 className='brand--title'>
+          <h1 className={`brand--title ${brandTitleDisplayed ? "" : "brand--title__hidden"}`}>
              <span>S</span>
              <span>A</span>
              <span>L</span>
@@ -42,8 +60,8 @@ const homePageComment = "I am an enthusiast, passionate, skilled, innovative, an
              <span>O</span>
              <span>N</span>
            </h1>
-          <hr className='brand--horizontal__line' />
-          <small className='brand--small' ><span>TSHOBOHWA</span><span>SULEMANI</span></small>
+          <hr className={`brand--horizontal__line ${displayedHorizontalLine ? '' : 'horizontal--line__hidden'}`} />
+          <small className={`brand--small ${brandTitleDisplayed ? "" : "brand--title__hidden"}`} ><span>TSHOBOHWA</span><span>SULEMANI</span></small>
         </div>
         <div className='comments--btn__container'>
           <p className='home--page__comment'> {displayedHomePageComment} </p>
