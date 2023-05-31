@@ -33,7 +33,15 @@ const homePageComment = "I am an enthusiast, passionate, skilled, innovative, an
       <img src={background} alt="background" onLoad={handleImageLoadEvent} className={`home--background__image ${imageLoaded? '':'home--bg__hidden'}`} />
       <div className='home--section__container'>
         <div className='brand--container'>
-          <h1 className='brand--title'> <span>S</span> <span>A</span> <span>L</span> <span>O</span> <span>M</span> <span>O</span> <span>N</span> </h1>
+          <h1 className='brand--title'>
+             <span>S</span>
+             <span>A</span>
+             <span>L</span>
+             <span>O</span>
+             <span>M</span>
+             <span>O</span>
+             <span>N</span>
+           </h1>
           <hr className='brand--horizontal__line' />
           <small className='brand--small' ><span>TSHOBOHWA</span><span>SULEMANI</span></small>
         </div>

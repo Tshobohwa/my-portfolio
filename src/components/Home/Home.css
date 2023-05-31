@@ -89,7 +89,7 @@
     padding: 0 1rem;
     margin-top: 1rem;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 3s;
 }
 
 .home--btn__hidden {
