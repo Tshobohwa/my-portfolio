@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
@@ -6,8 +7,12 @@ import MediaList from "./components/MediaList/MediaList";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
+  const [bgImg, setBgImg] = useState(false);
+  useEffect(() => {
+    setBgImg(true);
+  }, []);
   return (
-    <div className="App">
+    <div className={`App ${bgImg ? "" : "no--bg__img"}`}>
       <header className="app--header">
         <NavBar />
       </header>

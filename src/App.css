@@ -2,6 +2,13 @@ body {
     color: var(--font-color);
     font-family: "Lato", sans-serif;
     background-color: var(--color-primary);
+}
+
+.no--bg__img {
+    background-image: none;
+}
+
+.App {
     background-image: url('./assets/images/black-marble.jpeg');
     background-position: top;
     background-repeat: no-repeat;
