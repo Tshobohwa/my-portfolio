@@ -5,14 +5,19 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import MediaList from "./components/MediaList/MediaList";
 import NavBar from "./components/NavBar/NavBar";
+import bgImg from "./assets/images/black-marble.jpeg";
 
 function App() {
-  const [bgImg, setBgImg] = useState(false);
+  const [bgImgIsLoaded, setBgImgIsLoaded] = useState(false);
   useEffect(() => {
-    setBgImg(true);
+    setBgImgIsLoaded(true);
   }, []);
   return (
-    <div className={`App app--bg__img ${bgImg ? "" : "no--bg__img"}`}>
+    <div className="App">
+      <img
+        className={`app--bg__img ${bgImgIsLoaded ? "" : "no--bg__img"}`}
+        src={bgImg}
+      />
       <header className="app--header">
         <NavBar />
       </header>
