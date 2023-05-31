@@ -7,13 +7,13 @@ const Home = () => {
   const handleImageLoadEvent = () => {
     setImageLoaded(true)
   }
-const homePageComment = `I'm an enthusiast, passionate, skilled, innovative, and detail-oriented full stack web developer.`;
+const homePageComment = "I am an enthusiast, passionate, skilled, innovative, and detail-oriented full stack web developer.";
   const [displayedHomePageComment, setDisplayedHomePageComment] = useState('');
   const [homeBtnDisplayed, setHomeBtnDisplayed] = useState(false);
 
   useEffect(() => {
-    setDisplayedHomePageComment('I')
-    const homePageCommentChars = homePageComment.split('');
+    setDisplayedHomePageComment("I")
+    const homePageCommentChars = homePageComment.split("");
     let currentIndex = 0;
       const timer = setInterval(() => {
         if (currentIndex < homePageCommentChars.length-1) {
@@ -27,7 +27,7 @@ const homePageComment = `I'm an enthusiast, passionate, skilled, innovative, and
       return () => {
         clearInterval(timer);
       };
-    }, []);
+    }, []); 
     return (
     <section id='home-section' className='home--section__wrapper'>
       <img src={background} alt="background" onLoad={handleImageLoadEvent} className={`home--background__image ${imageLoaded? '':'home--bg__hidden'}`} />
