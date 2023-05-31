@@ -1,8 +1,7 @@
 .page--footer {
     width: 100%;
-    background-color: var(--primary-color-curtain);
-    padding-left: 4rem;
-    padding-right: 1rem;
+    background-color: var(--color-secondary);
+    padding: 1rem 1rem 1rem 4rem;
 }
 
 .footer--form {
