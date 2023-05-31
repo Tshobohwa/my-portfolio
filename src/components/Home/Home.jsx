@@ -40,11 +40,16 @@ const Home = () => {
   }
   const handleImageLoadEvent = () => {
     setImageLoaded(true)
-    setTimeout(
+  }
+
+  const handleDisplayHomePageContent = () => {
+    if (!imageLoaded) return
+      setTimeout(
       displayHomePageContent()
     , 1000)
+  
   }
-  useEffect(displayHomePageContent, [imageLoaded])
+  useEffect(handleDisplayHomePageContent, [imageLoaded])
 
     return (
     <section id='home-section' className='home--section__wrapper'>
