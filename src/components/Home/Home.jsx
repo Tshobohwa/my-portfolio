@@ -42,7 +42,7 @@ const Home = () => {
     setImageLoaded(true)
     setTimeout(
       displayHomePageContent()
-    , 500)
+    , 1000)
   }
   useEffect(displayHomePageContent, [imageLoaded])
 
