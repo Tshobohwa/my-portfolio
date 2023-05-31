@@ -18,6 +18,7 @@ function App() {
         className={`app--bg__img ${bgImgIsLoaded ? "" : "no--bg__img"}`}
         src={bgImg}
       />
+
       <header className="app--header">
         <NavBar />
       </header>

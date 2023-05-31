@@ -5,19 +5,22 @@ body {
 }
 
 .no--bg__img {
-    background-image: url("");
+    opacity: 0;
+}
+
+.App {
+    position: relative;
 }
 
 .app--bg__img {
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: -3;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background-image 1s;
+    object-position: top;
+    object-fit: cover;
+    transition: opacity 1s;
 }
 
 a {
