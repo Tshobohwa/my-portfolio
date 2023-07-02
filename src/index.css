@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-:root {
-    --color-primary: #000000;
-    --primary-color-curtain: #000000bf;
-    --color-secondary: #1d1d1d;
-    --font-color: #f2f2f2;
-    --color-accent-1: #808080;
-    --color-accent-2: #dcdcdc;
-    --color-accent-3: #333333;
-
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
