@@ -1,27 +1,49 @@
 import React from 'react'
 import salomonlogo from '../assets/salomonlogo.png'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   return (
-    <nav className="h-20 bg-gray-800 flex text-xl items-center justify-between sticky top-0 px-10">
-        <a href="#">
+    <nav className="h-20 bg-gray-50 flex text-xl items-center justify-between sticky top-0 px-20 z-50">
+        <Link to='section-1'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        >
             <img src={salomonlogo} alt="Salomon" className="h-[4.5rem]" />
-        </a>
-        <ul className="flex gap-2 text-gray-50">
+        </Link>
+
+        <ul className="flex gap-2 text-gray-950">
             <li>
-                <a href="#">Home</a>
+                <Link to='section-2'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >                
+                    ABOUT
+                </Link>
             </li>
             <li>
-                <a href="#">About</a>
+                <Link to='section-3'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >                
+                    PROJECTS
+                </Link>
             </li>
             <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Resume</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
+                <Link to='section-4'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >                
+                    CONTACTS
+                </Link>
             </li>
         </ul>
     </nav>

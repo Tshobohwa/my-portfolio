@@ -1,12 +1,22 @@
 import './App.css'
+import About from './components/About'
+import Contacts from './components/Contacts'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Projects from './components/Projects'
+import Technologies from './components/Technologies'
 
 function App() {
 
   return (
-    <main className="bg-gray-300 h-full w-full">
+    <>
       <Navbar />
-    </main>
+      <Home />
+      <About />
+      <Technologies/>
+      <Projects />
+      <Contacts />
+    </>
   )
 }
 
