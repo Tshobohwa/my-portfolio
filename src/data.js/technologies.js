@@ -1,4 +1,4 @@
-import html5 from "../assets./technologies/html.png";
+import html5 from "../assets/technologies/html.png";
 import css3 from "../assets/technologies/css.png";
 import javascript from "../assets/technologies/javascript.png";
 import reactJS from "../assets/technologies/reactjs.png";
