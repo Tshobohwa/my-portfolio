@@ -9,14 +9,14 @@ import Technologies from './components/Technologies'
 function App() {
 
   return (
-    <div className='relative'>
+    <>
       <Navbar />
       <Home />
       <About />
       <Technologies/>
       <Projects />
       <Contacts />
-    </div>
+  </>
   )
 }
 
