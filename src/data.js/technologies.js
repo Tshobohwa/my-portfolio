@@ -13,8 +13,8 @@ import tailwindcss from "../assets/technologies/tailwind.png";
 import expressJS from "../assets/technologies/express.png";
 import github from "../assets/technologies/github.png";
 import mySQL from "../assets/technologies/mysql.png";
-import bootstrap from "../assets/technologies/bootstrap.png";
-import jest from "../assets/technologies/jest.png";
+// import bootstrap from "../assets/technologies/bootstrap.png";
+// import jest from "../assets/technologies/jest.png";
 import mongodb from "../assets/technologies/mongodb.png";
 
 const technologies = [
@@ -75,18 +75,18 @@ const technologies = [
     image: mySQL,
     text: "mySQL",
   },
-  {
-    image: bootstrap,
-    text: "Bootstrap",
-  },
+  // {
+  //   image: bootstrap,
+  //   text: "Bootstrap",
+  // },
   {
     image: ruby,
     text: "Ruby",
   },
-  {
-    image: jest,
-    text: "Jest",
-  },
+  // {
+  //   image: jest,
+  //   text: "Jest",
+  // },
   {
     image: mongodb,
     text: "Mongodb",
