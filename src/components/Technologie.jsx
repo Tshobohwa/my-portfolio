@@ -1,15 +1,52 @@
-import React from 'react'
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import {
+  Decal,
+  Float,
+  OrbitControls,
+  Preload,
+  useTexture,
+} from '@react-three/drei';
+import Loader from './Loader';
+
+const Ball = (props) => {
+  const [decal] = useTexture([props.imgUrl]);
+
+  return (
+    <Float speed={2.5} rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
+      <mesh castShadow receiveShadow scale={2.75}>
+        <icosahedronGeometry args={[1, 2]} />
+        <meshStandardMaterial
+          color="#3d3d3d"
+          polygonOffset
+          polygonOffsetFactor={-5}
+          flatShading
+        />
+        <Decal
+          position={[0, 0, 1]}
+          rotation={[2 * Math.PI, 0, 6.25]}
+          flatShading
+          map={decal}
+        />
+      </mesh>
+    </Float>
+  );
+};
 
 const Technologie = (props) => {
-    const {image, text} = props.technology
+  const { image } = props.technology
   return (
-    <div className='h-[160px] w-[100px] flex flex-col items-center gap-3'>
-        <div className='h-[80px] w-[80px] rounded-full "bg-gradient-to-r from-transparent to-black flex items-center justify-center'>
-            <img src={image} alt={text} className=' h-[50px] w-[50px]' />
-        </div>
-        <h3 className='text-2xl text-white'>{text}</h3>
-    </div>
-  )
-}
+    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+      <Suspense fallback={<Loader />}>
+        <OrbitControls enableZoom={false} position0={0} />
+        <Ball imgUrl={image} />
+      </Suspense>
 
-export default Technologie
+      <Preload all />
+    </Canvas>
+  );
+};
+
+export default Technologie;

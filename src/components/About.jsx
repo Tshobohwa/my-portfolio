@@ -1,6 +1,6 @@
 import React from 'react'
 import stacks from '../data.js/stacks'
-import Stack from './stack'
+import Stack from './Stack'
 
 const About = () => {
   return (
