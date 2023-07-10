@@ -14,6 +14,9 @@ const Home = () => {
             <h2 className="text-[2rem] text-gray-500 font-semibold">Hi</h2>
             <h2 className="text-[3rem] text-black font-bold">I'm SALOMON</h2>
             <p className="w-[40rem] text-gray-700 text-2xl">An enthusiast, passionate, skilled, innovative, and detail-oriented full stack web developer.</p>
+            <div>
+              
+            </div>
         </div>
         <div className="bg-black overflow-hidden flex justify-end" style={{
             clipPath: "polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%)"
